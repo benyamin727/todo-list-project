@@ -3,3 +3,20 @@ body {
     background: rgb(26, 85, 151);
     background: linear-gradient(180deg, rgba(26, 85, 151, 1) 4%, rgba(7, 71, 95, 1) 31%, rgba(0, 66, 74, 0.9612219887955182) 40%, rgba(9, 88, 86, 1) 47%, rgba(57, 205, 147, 1) 87%);
 }
+
+$text-color:#fff;
+.main-bar-line {
+    width: 100%;
+    background-color: #fff;
+    height: 1%;
+}
+
+.main-bar {
+    &-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: $text-color;
+    }
+}

@@ -5,4 +5,27 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #1a5597), color-stop(31%, #07475f), color-stop(40%, rgba(0, 66, 74, 0.961222)), color-stop(47%, #095856), color-stop(87%, #39cd93));
   background: linear-gradient(180deg, #1a5597 4%, #07475f 31%, rgba(0, 66, 74, 0.961222) 40%, #095856 47%, #39cd93 87%);
 }
+
+.main-bar-line {
+  width: 100%;
+  background-color: #fff;
+  height: 1%;
+}
+
+.main-bar-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
 /*# sourceMappingURL=app.css.map */
