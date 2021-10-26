@@ -6,6 +6,14 @@ body {
   background: linear-gradient(180deg, #1a5597 4%, #07475f 31%, rgba(0, 66, 74, 0.961222) 40%, #095856 47%, #39cd93 87%);
 }
 
+.main-bar-bottom-btn-1 {
+  background-color: #B51E20;
+}
+
+.main-bar-bottom-btn-2 {
+  background-color: #209338;
+}
+
 .main-bar-line {
   width: 100%;
   background-color: #fff;
