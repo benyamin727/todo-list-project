@@ -9,6 +9,7 @@ $text-color:#fff;
     width: 100%;
     background-color: #fff;
     height: 1%;
+    margin-top: 8px;
 }
 
 .main-bar {
@@ -18,5 +19,14 @@ $text-color:#fff;
         justify-content: space-between;
         align-items: center;
         color: $text-color;
+    }
+    &-bottom {
+        &-person {
+            background-color: #98B6CE;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: $text-color;
+        }
     }
 }
