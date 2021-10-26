@@ -1,4 +1,8 @@
 body {
-  color: red;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #1a5597;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #1a5597), color-stop(31%, #07475f), color-stop(40%, rgba(0, 66, 74, 0.961222)), color-stop(47%, #095856), color-stop(87%, #39cd93));
+  background: linear-gradient(180deg, #1a5597 4%, #07475f 31%, rgba(0, 66, 74, 0.961222) 40%, #095856 47%, #39cd93 87%);
 }
 /*# sourceMappingURL=app.css.map */
