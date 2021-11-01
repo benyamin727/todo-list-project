@@ -4,6 +4,10 @@ body {
     background: linear-gradient(180deg, rgba(26, 85, 151, 1) 4%, rgba(7, 71, 95, 1) 31%, rgba(0, 66, 74, 0.9612219887955182) 40%, rgba(9, 88, 86, 1) 47%, rgba(57, 205, 147, 1) 87%);
 }
 
+.btn2 {
+    display: none !important;
+}
+
 $text-color:#fff;
 .main-bar-bottom-btn-1 {
     background-color: #B51E20;

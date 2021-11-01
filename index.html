@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="style/bootstrap-grid.min.css">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="java script/main.js">
-
     <link rel="stylesheet" href="scss/app.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -23,7 +22,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <col-12>
+            <div class="col-12">
                 <div class="main-bar">
                     <div class="main-bar-top">
                         <span class="material-icons main-bar-top-plus" data-toggle="modal" data-target="#exampleModal">
@@ -32,117 +31,99 @@
                         <h2> مدیریت اشخاص</h2>
                     </div>
                     <div class="main-bar-line"></div>
-                    <div class=" main-bar-bottom ">
-                        <div class="main-bar-bottom-person">
-                            <div>
-                                <button class="main-bar-bottom-btn-1"> حذف </button>
-                                <button class="main-bar-bottom-btn-2"> ویرایش</button>
-                            </div>
-                            <h5>بنیامین پارسا</h5>
-                        </div>
-                        <div class="main-bar-bottom-person">
-                            <div>
-                                <button class="main-bar-bottom-btn-1"> حذف </button>
-                                <button class="main-bar-bottom-btn-2"> ویرایش</button>
-                            </div>
-                            <h5>بنیامین پارسا</h5>
-                        </div>
-                        <div class="main-bar-bottom-person">
-                            <div>
-                                <button class="main-bar-bottom-btn-1"> حذف </button>
-                                <button class="main-bar-bottom-btn-2"> ویرایش</button>
-                            </div>
-                            <h5>بنیامین پارسا</h5>
-                        </div>
-                        <div class="main-bar-bottom-person">
-                            <div>
-                                <button class="main-bar-bottom-btn-1"> حذف </button>
-                                <button class="main-bar-bottom-btn-2"> ویرایش</button>
-                            </div>
-                            <h5>بنیامین پارسا</h5>
-                        </div>
-                        <div class="main-bar-bottom-person">
-                            <div>
-                                <button class="main-bar-bottom-btn-1"> حذف </button>
-                                <button class="main-bar-bottom-btn-2"> ویرایش</button>
-                            </div>
-                            <h5>بنیامین پارسا</h5>
-                        </div>
-                        <div class="main-bar-bottom-person">
-                            <div>
-                                <button class="main-bar-bottom-btn-1"> حذف </button>
-                                <button class="main-bar-bottom-btn-2"> ویرایش</button>
-                            </div>
-                            <h5>بنیامین پارسا</h5>
-                        </div>
-                        <div class="main-bar-bottom-person">
-                            <div>
-                                <button class="main-bar-bottom-btn-1"> حذف </button>
-                                <button class="main-bar-bottom-btn-2"> ویرایش</button>
-                            </div>
-                            <h5>بنیامین پارسا</h5>
-                        </div>
-                        <div class="main-bar-bottom-person">
-                            <div>
-                                <button class="main-bar-bottom-btn-1"> حذف </button>
-                                <button class="main-bar-bottom-btn-2"> ویرایش</button>
-                            </div>
-                            <h5>بنیامین پارسا</h5>
-                        </div>
-                        <div class="main-bar-bottom-person">
-                            <div>
-                                <button class="main-bar-bottom-btn-1"> حذف </button>
-                                <button class="main-bar-bottom-btn-2"> ویرایش</button>
-                            </div>
-                            <h5>بنیامین پارسا</h5>
-                        </div>
-                        <div class="main-bar-bottom-person">
-                            <div>
-                                <button class="main-bar-bottom-btn-1"> حذف </button>
-                                <button class="main-bar-bottom-btn-2"> ویرایش</button>
-                            </div>
-                            <h5>بنیامین پارسا</h5>
-                        </div>
+
+                    <div class=" main-bar-bottom " id="list-controller">
+
                     </div>
-                </div>
-            </col-12>
-        </div>
-    </div>
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Launch demo modal
-      </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-                </div>
-                <div class="modal-body">
-                    <input type="text">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">لغو</button>
-                    <button type="button" class="btn btn-primary">ثبت</button>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn2" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">مشخصات خود را وارد کنید</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                    </div>
+                    <div class="modal-body">
+                        <input class="w-100" type="text" id="todo-input">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">لغو</button>
+                        <button type="button" class="btn btn-primary" id="save" onclick="functioninput()">ثبت</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <script src="java script/main.js"></script> -->
+        <!-- <script src="java script/modal.js"></script> -->
+        <script>
+            $('#myModal').on('shown.bs.modal', function() {
+                $('#myInput').trigger('focus')
+            })
+            let listController = document.getElementById('list-controller')
+            let list = null;
+            if (localStorage.length === 0) {
+                list = [];
+                localStorage.setItem(0, list)
+            } else {
+                list = JSON.parse(localStorage.getItem(0));
+                reRenderList();
+            }
 
-    <!-- <script src="java script/main.js"></script> -->
-    <!-- <script src="java script/modal.js"></script> -->
-    <script>
-        $('#myModal').on('shown.bs.modal', function() {
-            $('#myInput').trigger('focus')
-        })
-    </script>
+            function functioninput() {
+                const input = document.getElementById('todo-input').value;
+                if (input) {
+                    list.push({
+                        input
+                    });
+                    reRenderList();
+                    localStorage.setItem(0, JSON.stringify(list))
+                }
+            }
+
+            function reRenderList() {
+                listController.innerHTML = '';
+                for (let i = 0; i < list.length; i++) {
+                    listController.innerHTML += `  
+                        <div class="main-bar-bottom-person" id="person">
+                            <div>
+                                <button class="main-bar-bottom-btn-1" onclick="deleteRow(${i})" id="btn1"> حذف </button>
+                                <button class="main-bar-bottom-btn-2" onclick="editRow(${i})" id="btn2"> ویرایش</button>
+                            </div>
+                                 <h5 id="name-box">${list[i].input}</h5>
+                            </div>
+                   
+                            `
+                }
+            }
+
+            function editRow(index) {
+
+
+                var edit = prompt("وارد کنید");
+                arman = edit.value;
+                arman.splice(index, 1);
+                reRenderList();
+                localStorage.setItem(0, JSON.stringify(arman))
+            }
+
+            function deleteRow(index) {
+                console.log(list);
+                console.log("list.length " + list.length);
+                console.log("index " + index);
+                list.splice(index, 1);
+                reRenderList();
+                localStorage.setItem(0, JSON.stringify(list))
+            }
+        </script>
 </body>
-
 
 </html>
