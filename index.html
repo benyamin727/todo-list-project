@@ -27,6 +27,7 @@
                     <div class="main-bar-top">
                         <span class="material-icons main-bar-top-plus" data-toggle="modal" data-target="#exampleModal">
                             add
+                            
                         </span>
                         <h2> مدیریت اشخاص</h2>
                     </div>
@@ -43,25 +44,27 @@
         Launch demo modal
       </button>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">مشخصات خود را وارد کنید</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <form id="myform">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">مشخصات خود را وارد کنید</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close">
                 <span aria-hidden="true">&times;</span>
               </button>
-                    </div>
-                    <div class="modal-body">
-                        <input class="w-100" type="text" id="todo-input">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">لغو</button>
-                        <button type="button" class="btn btn-primary" id="save" onclick="functioninput()">ثبت</button>
+                        </div>
+                        <div class="modal-body">
+                            <input class="w-100" type="text" id="todo-input">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancel" onclick="cancell()">لغو</button>
+                            <button type="button" class="btn btn-primary" id="save" onclick="functioninput()">ثبت</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
         <!-- <script src="java script/main.js"></script> -->
         <!-- <script src="java script/modal.js"></script> -->
         <script>
@@ -79,7 +82,7 @@
             }
 
             function functioninput() {
-                const input = document.getElementById('todo-input').value;
+                let input = document.getElementById('todo-input').value;
                 if (input) {
                     list.push({
                         input
@@ -87,6 +90,12 @@
                     reRenderList();
                     localStorage.setItem(0, JSON.stringify(list))
                 }
+                document.getElementById("cancel").click();
+                document.getElementById("myform").reset();
+            }
+
+            function cancell() {
+                document.getElementById("myform").reset();
             }
 
             function reRenderList() {
@@ -100,25 +109,18 @@
                             </div>
                                  <h5 id="name-box">${list[i].input}</h5>
                             </div>
-                   
-                            `
+                         `
                 }
             }
 
             function editRow(index) {
-
-
-                var edit = prompt("وارد کنید");
-                arman = edit.value;
-                arman.splice(index, 1);
+                let arman = prompt("وارد کنید");
+                list[index].input = arman;
                 reRenderList();
-                localStorage.setItem(0, JSON.stringify(arman))
+                localStorage.setItem(0, JSON.stringify(list))
             }
 
             function deleteRow(index) {
-                console.log(list);
-                console.log("list.length " + list.length);
-                console.log("index " + index);
                 list.splice(index, 1);
                 reRenderList();
                 localStorage.setItem(0, JSON.stringify(list))
